@@ -26,18 +26,8 @@ namespace PhysicsEngineWinForm
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            o.Gravity();
+            o.Tick();
             Invalidate();
-            if (o.Y >= 100)
-            {
-                o.Velocity.Y = -o.Velocity.Y + o.Velocity.Y / 4;
-            }
-
-            if (o.Y >= Height)
-            {
-                o.Y = 0;
-                o.Stop();
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -51,6 +41,7 @@ namespace PhysicsEngineWinForm
             {
                 button1.Text = "Test Gravity";
             }
+            MessageBox.Show(Math.Round(o.Velocity.Y, 7).ToString());
         }
 
         private void button2_Click(object sender, EventArgs e)

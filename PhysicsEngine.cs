@@ -50,6 +50,28 @@ class PhysicsEngine
         {
             Velocity = new Vector2(0, 0);
         }
+
+        public void Tick() //should be called once every 1ms
+        {
+            Gravity();
+            //Bounce at 100px
+            if (Y >= 100)
+            {
+                Velocity.Y = -Velocity.Y + Velocity.Y / 5;
+            }
+            //Reset at 100px       
+            if (Y >= 500)
+            {
+                Y = 0;
+                Stop();
+            }
+            //Makeing it stop when laying on the "floor"
+            if (Math.Round(Velocity.Y, 7) == -0.0043644)
+            {
+                Acceleration.Y = 0;
+                Velocity.Y = 0;
+            }
+        }
     }
 
     //Enigne
