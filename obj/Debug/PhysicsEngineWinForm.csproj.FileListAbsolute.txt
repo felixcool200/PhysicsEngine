@@ -1,7 +1,6 @@
 B:\Google Drive\Visual Studio Project\C#\PhysicsEngine\bin\Debug\PhysicsEngineWinForm.exe.config
 B:\Google Drive\Visual Studio Project\C#\PhysicsEngine\bin\Debug\PhysicsEngineWinForm.exe
 B:\Google Drive\Visual Studio Project\C#\PhysicsEngine\bin\Debug\PhysicsEngineWinForm.pdb
-B:\Google Drive\Visual Studio Project\C#\PhysicsEngine\obj\Debug\PhysicsEngineWinForm.csprojAssemblyReference.cache
 B:\Google Drive\Visual Studio Project\C#\PhysicsEngine\obj\Debug\PhysicsEngineWinForm.Properties.Resources.resources
 B:\Google Drive\Visual Studio Project\C#\PhysicsEngine\obj\Debug\PhysicsEngineWinForm.csproj.GenerateResource.cache
 B:\Google Drive\Visual Studio Project\C#\PhysicsEngine\obj\Debug\PhysicsEngineWinForm.csproj.CoreCompileInputs.cache

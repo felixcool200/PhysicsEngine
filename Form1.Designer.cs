@@ -1,4 +1,4 @@
-﻿namespace PhysicsEngine
+﻿namespace PhysicsEngineWinForm
 {
     partial class Form1
     {
