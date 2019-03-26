@@ -17,6 +17,7 @@ namespace PhysicsEngineWinForm
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            PhysicsEngine p = new PhysicsEngine();
         }
     }
 }
