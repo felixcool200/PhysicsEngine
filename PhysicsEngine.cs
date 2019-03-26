@@ -1,8 +1,10 @@
 ﻿using System;
 
-public class PhysicsEngine
+public class PhysicsEngineWinForm
 {
     public PhysicsEngine()
     {
+
     }
+
 }
