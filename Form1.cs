@@ -7,46 +7,47 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 namespace PhysicsEngineWinForm
 {
     public partial class Form1 : Form
     {
         PhysicsEngine PE = new PhysicsEngine();
-        PhysicsEngine.Object o = new PhysicsEngine.Object();
         public Form1()
         {
             InitializeComponent();
+            Random r = new Random();
+            int lowerLimit = 0;
+            int higerLimit = 200;
+            for(int i = 0; i < 10; i++)
+            {
+                PE.Objects.Add(new PhysicsEngine.Object(r.Next(lowerLimit, higerLimit), r.Next(lowerLimit, 10), 10, 10, true));
+            }
         }
 
         protected override void OnPaint(PaintEventArgs e)
         {
-            e.Graphics.FillEllipse(Brushes.Red, o.X, o.Y, o.Width, o.Height);
-            e.Graphics.DrawString(o.Velocity.Y.ToString(), SystemFonts.MenuFont, Brushes.Black, 200, 10);
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            o.Tick();
-            Invalidate();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            timer1.Enabled = !timer1.Enabled;
-            if (timer1.Enabled)
+            foreach(PhysicsEngine.Object o in PE.Objects)
             {
-                button1.Text = "Pause";
+                e.Graphics.FillEllipse(Brushes.Red, o.X, o.Y, o.Width, o.Height);
+                e.Graphics.DrawString(o.Velocity.Y.ToString(), SystemFonts.MenuFont, Brushes.Black, 200, 10);
+                e.Graphics.DrawLine(Pens.Black, 0, 100 + o.Height, 100, 100 + o.Height);
             }
-            else
-            {
-                button1.Text = "Test Gravity";
-            }
-            MessageBox.Show(Math.Round(o.Velocity.Y, 7).ToString());
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            o = new PhysicsEngine.Object();
+            Invalidate();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            PE.StopEngine();
+            Application.Exit();
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
             Invalidate();
         }
     }
