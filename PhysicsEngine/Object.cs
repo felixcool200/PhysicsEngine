@@ -19,14 +19,23 @@ namespace PhysicsEngine
                 affectedByGravity = hasGravity;
             }
 
-            public bool Collision(PhysicsEngine.Object.Rectangle @object)
+            public bool Collision(PhysicsEngine.Object.Circle circle)
             {
+                //Gör din collision här
+                if (0 == 1)
+                {
+                    return true;
+                }
                 return false;
             }
 
-            public bool Collision(PhysicsEngine.Object.Circle circle)
+            public bool Collision(PhysicsEngine.Object.Rectangle rectangle)
             {
-                return true;
+                if ((Math.Abs(Position.X - rectangle.Position.X) >= (Width + rectangle.Width)/2) && (Math.Abs(Position.Y - rectangle.Position.Y) >= (Height + rectangle.Height) / 2))
+                {
+                    return true;
+                }
+                return false;
             }
         }
         public class Circle : Object
@@ -39,6 +48,24 @@ namespace PhysicsEngine
                 Height = Radius;
                 this.Radius = Radius;
                 affectedByGravity = hasGravity;
+            }
+
+            public bool Collision(PhysicsEngine.Object.Circle circle)
+            {
+                    if((Math.Abs(Math.Pow(Position.X - circle.Position.X,2)) + (Math.Abs(Math.Pow(Position.Y - circle.Position.Y, 2))) <= Radius + circle.Radius)){
+                    return true;
+                    }
+                return false;
+            }
+
+            public bool Collision(PhysicsEngine.Object.Rectangle rectangle)
+            {
+                //Gör din collision här
+                    if (rectangle.Position.X==1)
+                    {
+                    return true;
+                    }
+                return false;
             }
         }
 
