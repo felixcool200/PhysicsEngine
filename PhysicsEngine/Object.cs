@@ -21,12 +21,43 @@ namespace PhysicsEngine
 
             public bool Collision(PhysicsEngine.Object.Circle circle)
             {
+                PhysicsEngine.Position.Point deltaPos = new Position.Point(Math.Abs(Position.X - circle.Position.X), Math.Abs(Position.Y-circle.Position.Y));
+
+                if (Math.Abs(deltaPos.X - Width / 2) < Math.Abs(circle.Position.X) || Math.Abs(deltaPos.Y - Height / 2) < circle.Position.Y) //the circle is centered at one of the sides
+                {
+                    if ((Math.Abs(deltaPos.X - Width / 2) < Math.Abs(circle.Position.X) && Math.Abs(deltaPos.Y - Height / 2) < circle.Position.Y))
+                    {
+                        return true;
+                    }
+                    return false;
+                }
+
+                PhysicsEngine.Position.Point cornerPos = new Position.Point(Height / 2, Width / 2);
+                PhysicsEngine.Position.Point deltaPosCorner = deltaPos - cornerPos;
+                double deltaHyp = Math.Sqrt(deltaPosCorner.X * deltaPosCorner.X + deltaPosCorner.Y * deltaPosCorner.Y);
+
                 //Gör din collision här
-                if (0 == 1)
+                if (deltaHyp > circle.Radius)
                 {
                     return true;
                 }
                 return false;
+
+                /* going to be used when calculating the outcome (direction of circle)
+                PhysicsEngine.Position.Point cornerMod = new Position.Point(1f, 1f);
+
+                if (circle.Position.Y < Position.Y)
+                {
+                    cornerPos.Y -= Height;
+                    cornerMod.Y--;
+                }
+                if (circle.Position.X < Position.X)
+                {
+                    cornerPos.X -= Width;
+                    cornerMod.X--;
+                }*/
+
+                
             }
 
             public bool Collision(PhysicsEngine.Object.Rectangle rectangle)
