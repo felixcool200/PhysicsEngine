@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/felixcool200/Documents/PhysicsEngineDOTNETCORE/PhysicsEngineDOTNETCORE.csproj": {}
+  },
+  "projects": {
+    "/home/felixcool200/Documents/PhysicsEngineDOTNETCORE/PhysicsEngineDOTNETCORE.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/felixcool200/Documents/PhysicsEngineDOTNETCORE/PhysicsEngineDOTNETCORE.csproj",
+        "projectName": "PhysicsEngineDOTNETCORE",
+        "projectPath": "/home/felixcool200/Documents/PhysicsEngineDOTNETCORE/PhysicsEngineDOTNETCORE.csproj",
+        "packagesPath": "/home/felixcool200/.nuget/packages/",
+        "outputPath": "/home/felixcool200/Documents/PhysicsEngineDOTNETCORE/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/felixcool200/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

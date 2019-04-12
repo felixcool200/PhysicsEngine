@@ -132,7 +132,7 @@ namespace PhysicsEngine
 
         public void Move()
         {
-            Position += Velocity;
+            //Position += Velocity;
             Position.Y += Velocity.Y;
             Position.X += Velocity.X;
         }

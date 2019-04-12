@@ -1,22 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace PhysicsEngineWinForm
+namespace PhysicsEngineDOTNETCORE
 {
-    static class Program
+    class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            PhysicsEngine.EngineCore EC = new PhysicsEngine.EngineCore();
+            Console.WriteLine(EC.PhysicsEngineClockThread.IsAlive.ToString());
+            EC.StartEngine();
+            Console.WriteLine(EC.PhysicsEngineClockThread.IsAlive.ToString());
+            
+            EC = new PhysicsEngine.EngineCore();
+            Console.WriteLine(EC.PhysicsEngineClockThread.IsAlive.ToString());
+            Console.WriteLine("Done");
         }
     }
 }

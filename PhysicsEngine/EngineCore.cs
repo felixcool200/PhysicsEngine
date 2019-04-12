@@ -11,12 +11,12 @@ namespace PhysicsEngine
         //Enigne
         public List<Object> Objects = new List<Object>();
 
-        System.Threading.Thread PhysicsEngineClockThread;
+        public System.Threading.Thread PhysicsEngineClockThread;
 
         public EngineCore()
         {
             PhysicsEngineClockThread = new System.Threading.Thread(new System.Threading.ThreadStart(Timer));
-            PhysicsEngineClockThread.Start();
+            //StartEngine();        
         }
 
         public void StartEngine()
@@ -25,8 +25,10 @@ namespace PhysicsEngine
         }
 
         public void StopEngine()
-        {
-            PhysicsEngineClockThread.Abort();
+        {     
+            //DOTNET Core doesn't allow Thread.Abort() so we are forced to remove the PysicsEngine when we are done instead              
+            Console.WriteLine("Not allowed");
+            //PhysicsEngineClockThread.Abort();
         }
 
         public void Timer()

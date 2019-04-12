@@ -19,16 +19,15 @@ namespace PhysicsEngine
                 this.Y = Y;
             }
 
-            public static Point operator +(Point p1, Point v1)
+            public static Point operator +(Point p1, Point p2)
             {
-                return new Point(v1.X + p1.X, v1.Y + p1.Y);
+                return new Point(p1.X + p2.X, p1.Y + p2.Y);
             }
 
-            public static Point operator -(Point p1, Point v1)
+            public static Point operator -(Point p1, Point p2)
             {
-                return new Point(v1.X - p1.X, v1.Y - p1.Y);
+                return new Point(p1.X - p2.X, p1.Y - p2.Y);
             }
-
 
             public Vector2 ToVector2(Point p)
             {
@@ -51,7 +50,7 @@ namespace PhysicsEngine
                 return new Vector2(v1.X * v2.X, v1.Y * v2.Y);
             }
 
-            public static Vector2 operator +(Vector2 v1, Vector2 v2)
+            public static Vector2 operator+ (Vector2 v1, Vector2 v2)
             {
                 return new Vector2(v1.X + v2.X, v1.Y + v2.Y);
             }
