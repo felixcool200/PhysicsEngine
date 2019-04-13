@@ -107,8 +107,10 @@ namespace PhysicsEngine
         public float Width { get; set; }
         public float Height { get; set; }
 
-        public PhysicsEngine.Position.Vector2 Velocity = new PhysicsEngine.Position.Vector2(0, 0);
-        PhysicsEngine.Position.Vector2 Acceleration = new PhysicsEngine.Position.Vector2(0, 0.00982F);
+        //public PhysicsEngine.Position.Vector2 Velocity = new PhysicsEngine.Position.Vector2(0, 0);
+        //PhysicsEngine.Position.Vector2 Acceleration = new PhysicsEngine.Position.Vector2(0, 0.00982F);
+        PhysicsEngine.Position.Vector2 Acceleration = new PhysicsEngine.Position.Vector2(0, 0F);
+        PhysicsEngine.Position.Vector2 Velocity = new PhysicsEngine.Position.Vector2(0, 1);
 
         public bool affectedByGravity { get; set; }
 

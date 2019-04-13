@@ -1,0 +1,11 @@
+/home/felixcool200/Documents/PhysicsEngine/obj/Debug/netcoreapp2.2/PhysicsEngine.csprojAssemblyReference.cache
+/home/felixcool200/Documents/PhysicsEngine/obj/Debug/netcoreapp2.2/PhysicsEngine.csproj.CoreCompileInputs.cache
+/home/felixcool200/Documents/PhysicsEngine/obj/Debug/netcoreapp2.2/PhysicsEngine.AssemblyInfoInputs.cache
+/home/felixcool200/Documents/PhysicsEngine/obj/Debug/netcoreapp2.2/PhysicsEngine.AssemblyInfo.cs
+/home/felixcool200/Documents/PhysicsEngine/bin/Debug/netcoreapp2.2/PhysicsEngine.deps.json
+/home/felixcool200/Documents/PhysicsEngine/bin/Debug/netcoreapp2.2/PhysicsEngine.runtimeconfig.json
+/home/felixcool200/Documents/PhysicsEngine/bin/Debug/netcoreapp2.2/PhysicsEngine.runtimeconfig.dev.json
+/home/felixcool200/Documents/PhysicsEngine/bin/Debug/netcoreapp2.2/PhysicsEngine.dll
+/home/felixcool200/Documents/PhysicsEngine/bin/Debug/netcoreapp2.2/PhysicsEngine.pdb
+/home/felixcool200/Documents/PhysicsEngine/obj/Debug/netcoreapp2.2/PhysicsEngine.dll
+/home/felixcool200/Documents/PhysicsEngine/obj/Debug/netcoreapp2.2/PhysicsEngine.pdb
