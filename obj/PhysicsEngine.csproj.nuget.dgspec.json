@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/felixcool200/Documents/PhysicsEngineDOTNETCORE/PhysicsEngineDOTNETCORE.csproj": {}
+    "/home/felixcool200/Documents/PhysicsEngine/PhysicsEngine.csproj": {}
   },
   "projects": {
-    "/home/felixcool200/Documents/PhysicsEngineDOTNETCORE/PhysicsEngineDOTNETCORE.csproj": {
+    "/home/felixcool200/Documents/PhysicsEngine/PhysicsEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/felixcool200/Documents/PhysicsEngineDOTNETCORE/PhysicsEngineDOTNETCORE.csproj",
-        "projectName": "PhysicsEngineDOTNETCORE",
-        "projectPath": "/home/felixcool200/Documents/PhysicsEngineDOTNETCORE/PhysicsEngineDOTNETCORE.csproj",
+        "projectUniqueName": "/home/felixcool200/Documents/PhysicsEngine/PhysicsEngine.csproj",
+        "projectName": "PhysicsEngine",
+        "projectPath": "/home/felixcool200/Documents/PhysicsEngine/PhysicsEngine.csproj",
         "packagesPath": "/home/felixcool200/.nuget/packages/",
-        "outputPath": "/home/felixcool200/Documents/PhysicsEngineDOTNETCORE/obj/",
+        "outputPath": "/home/felixcool200/Documents/PhysicsEngine/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"
