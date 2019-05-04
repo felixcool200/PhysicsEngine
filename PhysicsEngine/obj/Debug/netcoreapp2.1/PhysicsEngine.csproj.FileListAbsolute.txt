@@ -1,0 +1,11 @@
+C:\Users\felix\Documents\GitHub\PhysicsEngine\PhysicsEngine\bin\Debug\netcoreapp2.1\PhysicsEngine.deps.json
+C:\Users\felix\Documents\GitHub\PhysicsEngine\PhysicsEngine\bin\Debug\netcoreapp2.1\PhysicsEngine.runtimeconfig.json
+C:\Users\felix\Documents\GitHub\PhysicsEngine\PhysicsEngine\bin\Debug\netcoreapp2.1\PhysicsEngine.runtimeconfig.dev.json
+C:\Users\felix\Documents\GitHub\PhysicsEngine\PhysicsEngine\bin\Debug\netcoreapp2.1\PhysicsEngine.dll
+C:\Users\felix\Documents\GitHub\PhysicsEngine\PhysicsEngine\bin\Debug\netcoreapp2.1\PhysicsEngine.pdb
+C:\Users\felix\Documents\GitHub\PhysicsEngine\PhysicsEngine\obj\Debug\netcoreapp2.1\PhysicsEngine.csprojAssemblyReference.cache
+C:\Users\felix\Documents\GitHub\PhysicsEngine\PhysicsEngine\obj\Debug\netcoreapp2.1\PhysicsEngine.csproj.CoreCompileInputs.cache
+C:\Users\felix\Documents\GitHub\PhysicsEngine\PhysicsEngine\obj\Debug\netcoreapp2.1\PhysicsEngine.AssemblyInfoInputs.cache
+C:\Users\felix\Documents\GitHub\PhysicsEngine\PhysicsEngine\obj\Debug\netcoreapp2.1\PhysicsEngine.AssemblyInfo.cs
+C:\Users\felix\Documents\GitHub\PhysicsEngine\PhysicsEngine\obj\Debug\netcoreapp2.1\PhysicsEngine.dll
+C:\Users\felix\Documents\GitHub\PhysicsEngine\PhysicsEngine\obj\Debug\netcoreapp2.1\PhysicsEngine.pdb
